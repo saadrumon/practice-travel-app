@@ -1,16 +1,12 @@
-.menu style=("left: -240px;")
-  ul
-    li
-      a href="/"  Home
-    li
-      a href="/about"  About
-    li
-      a href="/signups/new"  Contact
-  = image_tag 'image-006.png', alt: "Close", width: "24px", class: "icon-close"
+#idSidenav.sidenav
+  a.closebtn onclick="closeNav()" href="javascript:void(0)" &times;
+  a href="#"  Home
+  a href="#"  About
+  a href="#"  Contact
 
 .home-main
-  = image_tag 'image-005.png', alt: "Open", width: "24px", class: "icon-menu"
   .container
+    span.openbtn onclick="openNav()" style="font-size:30px;cursor:pointer"  ☰
     .row
       .content.col-md-6.col-md-offset-6
         h1 Create and share Stories
@@ -34,3 +30,13 @@
 .footer
   .container
     p A Practice Travel Project
+
+
+javascript:
+    function openNav() {
+        document.getElementById("idSidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("idSidenav").style.width = "0";
+    }
