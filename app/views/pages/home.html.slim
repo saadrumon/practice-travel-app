@@ -1,0 +1,42 @@
+#idSidenav.sidenav
+  a.closebtn onclick="closeNav()" href="javascript:void(0)" &times;
+  a href="#"  Home
+  a href="#"  About
+  a href="#"  Contact
+
+.home-main
+  .container
+    span.openbtn onclick="openNav()" style="font-size:30px;cursor:pointer"  ☰
+    .row
+      .content.col-md-6.col-md-offset-6
+        h1 Create and share Stories
+        p
+          a.btn.btn-primary href="about"  Learn more
+
+.home-supporting
+  .container
+    h2 Relive and share your adventures
+    p Stories automatically creates a digital journal filled with only your best photos.
+
+.home-secondary
+  .container
+
+.home-about
+  .container
+    h2 Discover Stories
+    p
+      a.btn.btn-primary href="about" Learn more
+
+.footer
+  .container
+    p A Practice Travel Project
+
+
+javascript:
+    function openNav() {
+        document.getElementById("idSidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("idSidenav").style.width = "0";
+    }
