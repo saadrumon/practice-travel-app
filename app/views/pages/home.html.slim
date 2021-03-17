@@ -6,12 +6,11 @@
 
 .home-main
   .container
-    span.openbtn onclick="openNav()" style="font-size:30px;cursor:pointer"  ☰
     .row
       .content.col-md-6.col-md-offset-6
         h1 Create and share Stories
         p
-          a.btn.btn-primary href="about"  Learn more
+          = link_to "Learn more", "/about", class: "btn btn-primary"
 
 .home-supporting
   .container
@@ -25,18 +24,4 @@
   .container
     h2 Discover Stories
     p
-      a.btn.btn-primary href="about" Learn more
-
-.footer
-  .container
-    p A Practice Travel Project
-
-
-javascript:
-    function openNav() {
-        document.getElementById("idSidenav").style.width = "250px";
-    }
-
-    function closeNav() {
-        document.getElementById("idSidenav").style.width = "0";
-    }
+      = link_to "Learn more", "/about", class: "btn btn-primary"
